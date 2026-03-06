@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil to Soul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- CHAT APP -->
+        <div class="app">
+
+            <header>
+                <h2 class="title">🌱 Nalam-AI</h2>
+                <p class="tagline">Soil to Soul</p>
+
+                <select id="lang">
+                    <option value="en-US">English</option>
+                    <option value="ta-IN">Tamil</option>
+                </select>
+            </header>
+
+
+            <div class="progress">
+
+                <div id="step1" class="active">Disease</div>
+                <div id="step2">Nutrients</div>
+                <div id="step3">Crops</div>
+                <div id="step4">Grow</div>
+
+            </div>
+
+
+            <div id="chatbox"></div>
+
+
+            <div id="cropButtons"></div>
+
+
+            <div class="inputArea">
+
+                <button id="voiceBtn">🎤</button>
+
+                <input id="messageInput" placeholder="Enter disease or deficiency"
+                    onkeydown="if(event.key==='Enter') sendMessage()" />
+
+                <button onclick="sendMessage()">Send</button>
+
+            </div>
+
+
+            <div class="footer">
+
+                <button onclick="resetChat()">New Search</button>
+
+                <button onclick="toggleHistory()">History</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HISTORY PANEL -->
+        <div id="historyPanel">
+
+            <div class="historyHeader">
+
+                <h3>Chat History</h3>
+
+                <button onclick="toggleHistory()">✖</button>
+
+            </div>
+
+            <div id="historyContent"></div>
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

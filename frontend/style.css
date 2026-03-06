@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #1c3326;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* MAIN LAYOUT */
+
+.container {
+    display: flex;
+    height: 95vh;
+    width: 850px;
+    background: #243d2f;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* CHAT APP */
+
+.app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    background: #2e5740;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* FLOW */
+
+.progress {
+    display: flex;
+    justify-content: space-around;
+    background: #1a2f23;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.progress div {
+    background: #355f47;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+
+.progress .active {
+    background: #4CAF50;
+}
+
+/* CHAT */
+
+#chatbox {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user {
+    align-self: flex-end;
+    background: #4CAF50;
+    padding: 10px 14px;
+    border-radius: 15px 15px 5px 15px;
+    max-width: 70%;
+}
+
+.bot {
+    align-self: flex-start;
+    background: #355f47;
+    padding: 10px 14px;
+    border-radius: 15px 15px 15px 5px;
+    max-width: 70%;
+}
+
+/* CROPS */
+
+#cropButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 10px;
+}
+
+.cropBtn {
+    background: #3d7a55;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* INPUT */
+
+.inputArea {
+    display: flex;
+    gap: 6px;
+    padding: 10px;
+    background: #1a2f23;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTONS */
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #14241b;
+    padding: 8px;
+}
+
+
+/* HISTORY PANEL */
+
+#historyPanel {
+
+    width: 0;
+    overflow: hidden;
+    background: #1c3326;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+
+    border-left: 2px solid #355f47;
+
+}
+
+#historyPanel.open {
+
+    width: 320px;
+
+}
+
+
+/* HISTORY HEADER */
+
+.historyHeader {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+
+    background: #2e5740;
+
+}
+
+
+/* HISTORY CONTENT */
+
+#historyContent {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 12px;
+
+}
+
+
+/* HISTORY ITEMS */
+
+.historyItem {
+
+    background: #355f47;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+}
+
+.readBtn {
+    margin-left: 10px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
